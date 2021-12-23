@@ -1,0 +1,10 @@
+@import "../styles/colors";
+
+.side-bar {
+  background-color: $primary;
+  border-right: 1px solid black;
+  .sidebar-logo {
+    height: 4rem;
+    border-bottom: 1px solid black;
+  }
+}
