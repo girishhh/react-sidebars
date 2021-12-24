@@ -1,4 +1,9 @@
 .menu-item {
+  .fa-arrow-down,.fa-arrow-up {
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+  }
   .svg-inline--fa.fa-w-14 {
     width: 1.8rem;
   }

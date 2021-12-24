@@ -1,7 +1,5 @@
 import classNames from "classnames";
-import React from "react";
-import { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import "./DefaultLayout.scss";
 import Header from "./Header";
@@ -13,15 +11,22 @@ function DefaultLayout(props) {
     setShrink(!shrink);
   };
   return (
-    <Row className="h-100 mx-0 default-layout">
-      <Col md={classNames({0: shrink, 2: !shrink})} className={classNames("px-0",{"shrink-sidebar": shrink,"unshrink": !shrink})}>
+    <div className="h-100 mx-0 default-layout">
+      <div className={classNames("px-0")}>
         <SideBar shrink={shrink} />
-      </Col>
-      <Col className="px-0">
-        <Header toggleSidebar={toggleSidebar} />
-        <Outlet />
-      </Col>
-    </Row>
+      </div>
+      <div className="px-0">
+        <Header toggleSidebar={toggleSidebar} shrink={shrink} />
+        <main
+          className={classNames({
+            "main-shrinked": shrink,
+            "main-unshrinked": !shrink,
+          })}
+        >
+          <Outlet />
+        </main>
+      </div>
+    </div>
   );
 }
 

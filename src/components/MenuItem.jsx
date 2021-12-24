@@ -37,7 +37,7 @@ function MenuItem({ item, shrink, exapandParent = false }) {
         <>
           <NavItem
             key={item.path}
-            className={classNames("mb-3 menu-item align-self-start")}
+            className={classNames("menu-item py-2")}
             onClick={toggleExpand}
           >
             {item.path && (

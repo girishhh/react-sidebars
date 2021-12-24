@@ -8,14 +8,43 @@
   }
   border-right: 1px solid black;
   .sidebar-logo {
-    height: 4rem;
+    height: 10%;
     border-bottom: 1px solid black;
   }
+
   .logo,
   .side-bar-icon {
     width: 3rem;
   }
+
   .side-bar-icon-shrinked {
-    width: 2rem;
+    width: 2.75rem;
+  }
+
+  &.shrink-sidebar {
+    width: 6%;
+    transition: all 0.5s ease-out;
+  }
+
+  &.unshrink {
+    width: 22%;
+    transition: all 0.5s ease-out;
+  }
+  .side-menu-items {
+    display: block;
+    height: 90%;
+    overflow: scroll;
+  }
+  .nav-item {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 1200px) {
+  .side-bar {
+    &.shrink-sidebar {
+      width: 10%;
+      transition: all 0.5s ease-out;
+    }  
   }
 }

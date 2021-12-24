@@ -1,9 +1,22 @@
 .default-layout {
-  .shrink-sidebar {
-    width: 4.5%;
-    transition: all 0.5s ease-out;
+  main {
+    position: fixed;
+    top: 10%;
+    &.main-shrinked {
+      left: 6%;
+    }
+    &.main-unshrinked {
+      left: 22%;
+    }
   }
-  .unshrink {
-    transition: all 0.5s ease-out;
+}
+
+@media (max-width: 1200px) {
+  .default-layout {
+    main {
+      &.main-shrinked {
+        left: 10%;
+      }
+    }
   }
 }

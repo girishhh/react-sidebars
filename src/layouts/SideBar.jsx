@@ -12,16 +12,16 @@ const SideNavBarItems = [
     alt: "sidebar.dashboardAltText",
     title: "Home",
     subItems: [
-      {        
+      {
         img: IPHONE,
         alt: "sidebar.dashboardAltText",
         title: "Test1",
         subItems: [
           {
-            path: "/test2",
+            path: "/",
             img: IPHONE,
             alt: "sidebar.dashboardAltText",
-            title: "Test2",
+            title: "dashboard",
           },
           {
             path: "/test3",
@@ -100,23 +100,28 @@ const SideNavBarItems = [
 
 function SideBar({ shrink }) {
   return (
-    <div className="side-bar h-100">
+    <div
+      className={classNames("side-bar h-100 position-fixed", {
+        "shrink-sidebar": shrink,
+        unshrink: !shrink,
+      })}
+    >
       <div className="sidebar-logo d-flex justify-content-center align-items-center">
         <img src={LOGO} className="logo" alt="logo" />
       </div>
 
-      <Nav
-        className={classNames("flex-column", { "align-items-center": shrink })}
-      >
-        {SideNavBarItems.map((item) => (
-          <MenuItem
-            key={item.path}
-            item={item}
-            shrink={shrink}
-            exapandParent={true}    
-          />
-        ))}
-      </Nav>
+      <div className="side-menu-items">
+        <Nav className={classNames("d-block")}>
+          {SideNavBarItems.map((item) => (
+            <MenuItem
+              key={item.path}
+              item={item}
+              shrink={shrink}
+              exapandParent={true}
+            />
+          ))}
+        </Nav>
+      </div>
     </div>
   );
 }

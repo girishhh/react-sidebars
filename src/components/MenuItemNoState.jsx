@@ -7,7 +7,7 @@ function MenuItemNoState({ item, shrink, exapandParent }) {
   return (
     <>
       {exapandParent && (
-        <NavItem key={item.path} className="mb-3 menu-item align-self-start">
+        <NavItem key={item.path} className="menu-item py-2">
           <Nav.Link as={Link} to={item.path} className="p-0">
             <img
               src={item.img}
