@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSlidersH } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 function Header({ toggleSidebar }) {
   return (

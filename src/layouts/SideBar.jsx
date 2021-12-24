@@ -1,34 +1,100 @@
 import classNames from "classnames";
-import { Nav, NavItem } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Nav } from "react-bootstrap";
+import MenuItem from "../components/MenuItem";
 import IPHONE from "../styles/images/iphone.png";
 import LOGO from "../styles/images/whatsapp.svg";
 import "./SideBar.scss";
 
 const SideNavBarItems = [
   {
-    path: "/",
     img: IPHONE,
     alt: "sidebar.dashboardAltText",
-    title: "sidebar.dashboard",
+    title: "Home",
+    subItems: [
+      {        
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test1",
+        subItems: [
+          {
+            path: "/test2",
+            img: IPHONE,
+            alt: "sidebar.dashboardAltText",
+            title: "Test2",
+          },
+          {
+            path: "/test3",
+            img: IPHONE,
+            alt: "sidebar.dashboardAltText",
+            title: "Test3",
+          },
+        ],
+      },
+      {
+        path: "/test4",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test4",
+      },
+    ],
   },
   {
-    path: "/notification",
     img: IPHONE,
     alt: "sidebar.dashboardAltText",
-    title: "sidebar.dashboard",
+    title: "Notification",
+    subItems: [
+      {
+        path: "/test5",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test5",
+      },
+      {
+        path: "/test6",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test6",
+      },
+    ],
   },
   {
-    path: "/test",
     img: IPHONE,
     alt: "sidebar.dashboardAltText",
-    title: "sidebar.dashboard",
+    title: "test6",
+    subItems: [
+      {
+        path: "/test7",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test7",
+      },
+      {
+        path: "/test8",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test8",
+      },
+    ],
   },
   {
-    path: "/kjkj",
     img: IPHONE,
     alt: "sidebar.dashboardAltText",
-    title: "sidebar.dashboard",
+    title: "posts",
+    subItems: [
+      {
+        path: "/test9",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test9",
+      },
+      {
+        path: "/test10",
+        img: IPHONE,
+        alt: "sidebar.dashboardAltText",
+        title: "Test10",
+      },
+    ],
   },
 ];
 
@@ -39,16 +105,16 @@ function SideBar({ shrink }) {
         <img src={LOGO} className="logo" alt="logo" />
       </div>
 
-      <Nav className={classNames("flex-column", {"align-items-center": shrink})}>
+      <Nav
+        className={classNames("flex-column", { "align-items-center": shrink })}
+      >
         {SideNavBarItems.map((item) => (
-          <NavItem key={item.path} className="mb-3">
-            <Nav.Link as={Link}  to={item.path} className="p-0">
-              <img src={item.img} alt={item.alt} className="side-bar-icon" />
-              <span className={classNames({ "d-none": shrink })}>
-                {item.title}
-              </span>
-            </Nav.Link>
-          </NavItem>
+          <MenuItem
+            key={item.path}
+            item={item}
+            shrink={shrink}
+            exapandParent={true}    
+          />
         ))}
       </Nav>
     </div>

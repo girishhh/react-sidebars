@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import React from "react";
 import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
@@ -6,7 +7,7 @@ import "./DefaultLayout.scss";
 import Header from "./Header";
 import SideBar from "./SideBar";
 
-function DefaultLayout(props) {  
+function DefaultLayout(props) {
   const [shrink, setShrink] = useState(false);
   const toggleSidebar = () => {
     setShrink(!shrink);
