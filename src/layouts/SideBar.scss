@@ -2,12 +2,17 @@
 
 .side-bar {
   background-color: $primary;
+  color: $white;
+  a {
+    color: $white;
+  }
   border-right: 1px solid black;
   .sidebar-logo {
     height: 4rem;
     border-bottom: 1px solid black;
   }
-  .logo, .side-bar-icon {
+  .logo,
+  .side-bar-icon {
     width: 3rem;
   }
 }
