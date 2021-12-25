@@ -2,7 +2,7 @@ import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useState } from "react";
-import { Nav, NavItem } from "react-bootstrap";
+import { Col, Nav, NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./MenuItem.scss";
 import MenuItemNoState from "./MenuItemNoState";
@@ -12,23 +12,39 @@ function MenuItem({ item, shrink, exapandParent = false }) {
   const toggleExpand = () => setExpand(!expand);
   const navLinkContent = () => {
     return (
-      <>
-        <img
-          src={item.img}
-          alt={item.alt}
-          className={classNames({
-            "side-bar-icon": !shrink,
-            "side-bar-icon-shrinked": shrink,
-          })}
-        />
-        <span className={classNames({ "d-none": shrink })}>{item.title}</span>
-        {item.subItems && expand && (
-          <FontAwesomeIcon className="pe-2" icon={faArrowUp} size="1x" />
-        )}
-        {item.subItems && !expand && (
-          <FontAwesomeIcon className="pe-2" icon={faArrowDown} size="1x" />
-        )}
-      </>
+      <div className="d-flex">
+        <Col md="3" lg="2" className="d-flex align-items-center justify-content-end justify-content-md-start">
+          <img
+            src={item.img}
+            alt={item.alt}
+            className={classNames({
+              "side-bar-icon": !shrink,
+              "side-bar-icon-shrinked": shrink,
+            })}
+          />
+        </Col>
+        <Col xs="1" className="d-flex align-items-center">
+          <span className={classNames({ "d-md-none": shrink })}>
+            {item.title}
+          </span>
+        </Col>
+        <Col className="d-flex align-items-center justify-content-end">
+          {item.subItems && expand && (
+            <FontAwesomeIcon
+              className="pe-2 float-end"
+              icon={faArrowUp}
+              size="1x"
+            />
+          )}
+          {item.subItems && !expand && (
+            <FontAwesomeIcon
+              className="pe-2 float-end"
+              icon={faArrowDown}
+              size="1x"
+            />
+          )}
+        </Col>
+      </div>
     );
   };
   return (

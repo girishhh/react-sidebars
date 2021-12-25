@@ -1,6 +1,7 @@
 .default-layout {
   main {
     position: fixed;
+    z-index: -1;
     top: 10%;
     &.main-shrinked {
       left: 6%;
@@ -11,11 +12,26 @@
   }
 }
 
+
 @media (max-width: 1200px) {
   .default-layout {
     main {
       &.main-shrinked {
         left: 10%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .default-layout {
+    main {
+      &.main-unshrinked {
+        left: unset;
+      }
+      &.main-shrinked {
+        left: unset;
       }
     }
   }
