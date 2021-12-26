@@ -2,102 +2,11 @@ import classNames from "classnames";
 import React from "react";
 import { Nav } from "react-bootstrap";
 import MenuItem from "../components/MenuItem";
-import IPHONE from "../styles/images/iphone.png";
+import { SideNavBarItems } from "../NavBarConstants";
 import LOGO from "../styles/images/whatsapp.svg";
 import "./SideBar.scss";
 import "./SideBarMobile.scss";
 
-const SideNavBarItems = [
-  {
-    img: IPHONE,
-    alt: "sidebar.dashboardAltText",
-    title: "Home",
-    subItems: [
-      {
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test1",
-        subItems: [
-          {
-            path: "/",
-            img: IPHONE,
-            alt: "sidebar.dashboardAltText",
-            title: "dashboard",
-          },
-          {
-            path: "/test3",
-            img: IPHONE,
-            alt: "sidebar.dashboardAltText",
-            title: "Test3",
-          },
-        ],
-      },
-      {
-        path: "/test4",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test4",
-      },
-    ],
-  },
-  {
-    img: IPHONE,
-    alt: "sidebar.dashboardAltText",
-    title: "Notification",
-    subItems: [
-      {
-        path: "/test5",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test5",
-      },
-      {
-        path: "/test6",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test6",
-      },
-    ],
-  },
-  {
-    img: IPHONE,
-    alt: "sidebar.dashboardAltText",
-    title: "test6",
-    subItems: [
-      {
-        path: "/test7",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test7",
-      },
-      {
-        path: "/test8",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test8",
-      },
-    ],
-  },
-  {
-    img: IPHONE,
-    alt: "sidebar.dashboardAltText",
-    title: "posts",
-    subItems: [
-      {
-        path: "/test9",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test9",
-      },
-      {
-        path: "/test10",
-        img: IPHONE,
-        alt: "sidebar.dashboardAltText",
-        title: "Test10",
-      },
-    ],
-  },
-];
 
 function SideBarMobile({ shrink, toggleSidebar }) {
   return (

@@ -1,52 +1,14 @@
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useState } from "react";
-import { Col, Nav, NavItem } from "react-bootstrap";
+import { Nav, NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./MenuItem.scss";
 import MenuItemNoState from "./MenuItemNoState";
+import NavLinkContent from "./NavLinkContent";
 
 function MenuItem({ item, shrink, exapandParent = false }) {
   const [expand, setExpand] = useState(false);
   const toggleExpand = () => setExpand(!expand);
-  const navLinkContent = () => {
-    return (
-      <div className="d-flex">
-        <Col md="3" lg="2" className="d-flex align-items-center justify-content-end justify-content-md-start">
-          <img
-            src={item.img}
-            alt={item.alt}
-            className={classNames({
-              "side-bar-icon": !shrink,
-              "side-bar-icon-shrinked": shrink,
-            })}
-          />
-        </Col>
-        <Col xs="1" className="d-flex align-items-center">
-          <span className={classNames({ "d-md-none": shrink })}>
-            {item.title}
-          </span>
-        </Col>
-        <Col className="d-flex align-items-center justify-content-end">
-          {item.subItems && expand && (
-            <FontAwesomeIcon
-              className="pe-2 float-end"
-              icon={faArrowUp}
-              size="1x"
-            />
-          )}
-          {item.subItems && !expand && (
-            <FontAwesomeIcon
-              className="pe-2 float-end"
-              icon={faArrowDown}
-              size="1x"
-            />
-          )}
-        </Col>
-      </div>
-    );
-  };
   return (
     <>
       {exapandParent && (
@@ -58,10 +20,14 @@ function MenuItem({ item, shrink, exapandParent = false }) {
           >
             {item.path && (
               <Nav.Link as={Link} to={item.path} className="p-0">
-                {navLinkContent()}
+                <NavLinkContent item={item} shrink={shrink} expand={expand} />
               </Nav.Link>
             )}
-            {!item.path && <>{navLinkContent()}</>}
+            {!item.path && (
+              <>
+                <NavLinkContent item={item} shrink={shrink} expand={expand} />
+              </>
+            )}
           </NavItem>
           {item.subItems &&
             item.subItems.map((subItem) => (

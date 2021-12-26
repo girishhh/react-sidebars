@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React, { useState } from "react";
 import Media from "react-media";
 import { Outlet } from "react-router-dom";
+import { NAVBAR_MODE } from "../NavBarConstants";
 import "./DefaultLayout.scss";
 import Header from "./Header";
 import HeaderMobile from "./HeaderMobile";
@@ -24,14 +25,18 @@ function DefaultLayout(props) {
         >
           {(matches) => (
             <>
-              {matches.medium && <SideBar shrink={shrink} />}
-              {matches.small && <SideBarMobile shrink={shrink} toggleSidebar={toggleSidebar} />}
+              {matches.medium && (
+                <SideBar shrink={shrink} toggleSidebar={toggleSidebar} />
+              )}
+              {matches.small && (
+                <SideBarMobile shrink={shrink} toggleSidebar={toggleSidebar} />
+              )}
             </>
           )}
         </Media>
       </div>
       <div className="px-0">
-      <Media
+        <Media
           queries={{
             small: "(max-width: 767px)",
             medium: "(min-width: 768px)",
@@ -39,15 +44,17 @@ function DefaultLayout(props) {
         >
           {(matches) => (
             <>
-              {matches.medium && <Header toggleSidebar={toggleSidebar} shrink={shrink} />}
+              {matches.medium && (
+                <Header toggleSidebar={toggleSidebar} shrink={shrink} />
+              )}
               {matches.small && <HeaderMobile toggleSidebar={toggleSidebar} />}
             </>
           )}
-        </Media>        
+        </Media>
         <main
           className={classNames({
-            "main-shrinked": shrink,
-            "main-unshrinked": !shrink,
+            "main-shrinked": shrink && NAVBAR_MODE === 1,
+            "main-unshrinked": !shrink && NAVBAR_MODE === 1,
           })}
         >
           <Outlet />

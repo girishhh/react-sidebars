@@ -2,6 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import { Col, Nav, NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { NAVBAR_MODE } from "../NavBarConstants";
 
 function MenuItemNoState({ item, shrink, exapandParent }) {
   return (
@@ -11,7 +12,7 @@ function MenuItemNoState({ item, shrink, exapandParent }) {
           <Nav.Link as={Link} to={item.path} className="p-0">
             <div className="d-flex">
               <Col
-                md="3"
+                md="4"
                 lg="2"
                 className="d-flex align-items-center justify-content-end justify-content-md-start"
               >
@@ -25,7 +26,7 @@ function MenuItemNoState({ item, shrink, exapandParent }) {
                 />
               </Col>
               <Col xs="1" className="d-flex align-items-center">
-                <span className={classNames({ "d-md-none": shrink })}>
+                <span className={classNames({ "d-md-none": (shrink && NAVBAR_MODE===1) })}>
                   {item.title}
                 </span>
               </Col>
