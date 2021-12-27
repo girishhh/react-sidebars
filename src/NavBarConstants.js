@@ -21,19 +21,19 @@ export const SideNavBarItems = [
     subItems: [
       {
         img: REMINDER,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "Reminders",
         subItems: [
           {
             path: "/notification",
             img: NOTIFICATION,
-            alt: "sidebar.dashboardAltText",
+            alt: "sidebar",
             title: "Notification",
           },
           {
             path: "/alerts",
             img: ALERT,
-            alt: "sidebar.dashboardAltText",
+            alt: "sidebar",
             title: "Alert",
           },          
         ],
@@ -41,64 +41,64 @@ export const SideNavBarItems = [
       {
         path: "/idCard",
         img: ID_CARD,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "ID CARD",
       },
     ],
   },
   {
     img: DOLLAR,
-    alt: "sidebar.dashboardAltText",
+    alt: "sidebar",
     title: "Payments",
     subItems: [
       {
         path: "/payments",
         img: PAYMENT_METHOD,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "Payment methods",
       },
       {
         path: "/currency",
         img: CURRENCY,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "Currency",
       },
     ],
   },
   {
     img: MESSAGES,
-    alt: "sidebar.dashboardAltText",
+    alt: "sidebar",
     title: "Messages",
     subItems: [
       {
         path: "/mail",
         img: MAIL,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "MAIL",
       },
       {
         path: "/laptops",
         img: LAPTOP,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "Laptop models",
       },
     ],
   },
   {
     img: MEDIA,
-    alt: "sidebar.dashboardAltText",
+    alt: "sidebar",
     title: "Media",
     subItems: [
       {
         path: "/video",
         img: VIDEO,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "Video",
       },
       {
         path: "/audio",
         img: AUDIO,
-        alt: "sidebar.dashboardAltText",
+        alt: "sidebar",
         title: "Audio",
       },
     ],
