@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import React from "react";
 import { Nav, Offcanvas } from "react-bootstrap";
 import MenuItem from "../components/MenuItem";
 import { SideNavBarItems } from "../NavBarConstants";
