@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-sidebars/static/css/main.f833f7db.css",
-    "main.js": "/react-sidebars/static/js/main.28554891.js",
+    "main.js": "/react-sidebars/static/js/main.5fa69a93.js",
     "static/media/payment-method.svg": "/react-sidebars/static/media/payment-method.266a4c15f5c15ee74cdd88598270e14c.svg",
     "static/media/media.svg": "/react-sidebars/static/media/media.889da93fe3b9a858bdb411ce54693b48.svg",
     "static/media/reminder.svg": "/react-sidebars/static/media/reminder.de553efe4ba63070a57127cb3e013b7a.svg",
@@ -19,10 +19,10 @@
     "static/media/audio.svg": "/react-sidebars/static/media/audio.737850d7e8b9f7cc352f1b6ae2e8851b.svg",
     "static/media/alert.svg": "/react-sidebars/static/media/alert.38ded4982a4f0c0b51bf101a52f96f0a.svg",
     "main.f833f7db.css.map": "/react-sidebars/static/css/main.f833f7db.css.map",
-    "main.28554891.js.map": "/react-sidebars/static/js/main.28554891.js.map"
+    "main.5fa69a93.js.map": "/react-sidebars/static/js/main.5fa69a93.js.map"
   },
   "entrypoints": [
     "static/css/main.f833f7db.css",
-    "static/js/main.28554891.js"
+    "static/js/main.5fa69a93.js"
   ]
 }
