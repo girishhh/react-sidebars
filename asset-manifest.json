@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-sidebars/static/css/main.f833f7db.css",
+    "main.js": "/react-sidebars/static/js/main.28554891.js",
+    "static/media/payment-method.svg": "/react-sidebars/static/media/payment-method.266a4c15f5c15ee74cdd88598270e14c.svg",
+    "static/media/media.svg": "/react-sidebars/static/media/media.889da93fe3b9a858bdb411ce54693b48.svg",
+    "static/media/reminder.svg": "/react-sidebars/static/media/reminder.de553efe4ba63070a57127cb3e013b7a.svg",
+    "static/media/currency.svg": "/react-sidebars/static/media/currency.c46bfd972e96694c0d0a86f329aa0710.svg",
+    "static/media/laptop.svg": "/react-sidebars/static/media/laptop.4aa38effe02ef212b2631f85f3365679.svg",
+    "static/media/video.svg": "/react-sidebars/static/media/video.942210cca525b6e700c0eda69797913f.svg",
+    "static/media/id-card.svg": "/react-sidebars/static/media/id-card.d345166ef35fb51dc610b9663094a9fa.svg",
+    "static/media/notification.svg": "/react-sidebars/static/media/notification.d7e10591f6f3860fddbec2d11b1d6657.svg",
+    "static/media/whatsapp.svg": "/react-sidebars/static/media/whatsapp.27bd5a6a12ea38d5af3768c5a8cf0302.svg",
+    "static/media/mail.svg": "/react-sidebars/static/media/mail.dc3b5a362c4ee05c020ac8553bd15c2d.svg",
+    "static/media/dollar.svg": "/react-sidebars/static/media/dollar.4cedcd33528aae151562d11613720f17.svg",
+    "static/media/home.svg": "/react-sidebars/static/media/home.2fa4c7041c160e61197cb72431876215.svg",
+    "static/media/message.svg": "/react-sidebars/static/media/message.3ef2af12dba7fb1c5e50ad00efecda17.svg",
+    "index.html": "/react-sidebars/index.html",
+    "static/media/audio.svg": "/react-sidebars/static/media/audio.737850d7e8b9f7cc352f1b6ae2e8851b.svg",
+    "static/media/alert.svg": "/react-sidebars/static/media/alert.38ded4982a4f0c0b51bf101a52f96f0a.svg",
+    "main.f833f7db.css.map": "/react-sidebars/static/css/main.f833f7db.css.map",
+    "main.28554891.js.map": "/react-sidebars/static/js/main.28554891.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f833f7db.css",
+    "static/js/main.28554891.js"
+  ]
+}
