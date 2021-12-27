@@ -16,7 +16,8 @@ function Header({ toggleSidebar, shrink }) {
         className="ps-2"
         icon={faSlidersH}
         onClick={toggleSidebar}
-        size="2x"
+        size="2x"        
+        color="white"
       />
     </div>
   );

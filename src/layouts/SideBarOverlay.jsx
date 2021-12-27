@@ -5,7 +5,6 @@ import MenuItem from "../components/MenuItem";
 import { SideNavBarItems } from "../NavBarConstants";
 
 function SideBarOverlay({ shrink, toggleSidebar }) {
-  const [show, setShow] = useState(false);
   const handleClose = () => toggleSidebar();
 
   return (

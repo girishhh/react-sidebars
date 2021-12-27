@@ -16,17 +16,23 @@ function MenuItemNoState({ item, shrink, exapandParent }) {
                 lg="2"
                 className="d-flex align-items-center justify-content-end justify-content-md-start"
               >
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className={classNames({
-                    "side-bar-icon": !shrink,
-                    "side-bar-icon-shrinked": shrink,
-                  })}
-                />
+                {item.img && (
+                  <img
+                    src={item.img}
+                    alt={item.alt}
+                    className={classNames({
+                      "side-bar-icon": !shrink,
+                      "side-bar-icon-shrinked": shrink,
+                    })}
+                  />
+                )}
               </Col>
               <Col xs="8" className="d-flex align-items-center">
-                <span className={classNames({ "d-md-none": (shrink && NAVBAR_MODE===1) })}>
+                <span
+                  className={classNames({
+                    "d-md-none": shrink && NAVBAR_MODE === 1,
+                  })}
+                >
                   {item.title}
                 </span>
               </Col>

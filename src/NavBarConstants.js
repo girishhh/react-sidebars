@@ -16,7 +16,7 @@ import VIDEO from "../src/styles/images/video.svg";
 export const SideNavBarItems = [
   {
     img: HOME,
-    alt: "sidebar.dashboardAltText",
+    alt: "",
     title: "Home",
     subItems: [
       {
@@ -105,4 +105,4 @@ export const SideNavBarItems = [
   },
 ];
 
-export const NAVBAR_MODE = 2; //1,2
+export const NAVBAR_MODE = 1; //1,2
