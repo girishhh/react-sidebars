@@ -1,96 +1,109 @@
+import ALERT from "../src/styles/images/alert.svg";
 import IPHONE from "../src/styles/images/iphone.png";
-import APPLE from "../src/styles/images/apple-icon.png";
+import NOTIFICATION from "../src/styles/images/notification.svg";
+import ID_CARD from "../src/styles/images/id-card.svg";
+import DOLLAR from "../src/styles/images/dollar.svg";
+import PAYMENT_METHOD from "../src/styles/images/payment-method.svg";
+import CURRENCY from "../src/styles/images/currency.svg";
+import MESSAGES from "../src/styles/images/message.svg";
+import MAIL from "../src/styles/images/mail.svg";
+import LAPTOP from "../src/styles/images/laptop.svg";
+import VIDEO from "../src/styles/images/video.svg";
+import MEDIA from "../src/styles/images/media.svg";
+import AUDIO from "../src/styles/images/audio.svg";
+import HOME from "../src/styles/images/home.svg";
+import REMINDER from "../src/styles/images/reminder.svg";
 
 export const SideNavBarItems = [
   {
-    img: IPHONE,
+    img: HOME,
     alt: "sidebar.dashboardAltText",
     title: "Home",
     subItems: [
       {
-        img: IPHONE,
+        img: REMINDER,
         alt: "sidebar.dashboardAltText",
-        title: "Test1",
+        title: "Reminders",
         subItems: [
           {
-            path: "/",
-            img: APPLE,
+            path: "/notification",
+            img: NOTIFICATION,
             alt: "sidebar.dashboardAltText",
-            title: "dashboard",
+            title: "Notification",
           },
           {
-            path: "/test3",
-            img: IPHONE,
+            path: "/alerts",
+            img: ALERT,
             alt: "sidebar.dashboardAltText",
-            title: "Test3",
-          },
+            title: "Alert",
+          },          
         ],
       },
       {
-        path: "/test4",
-        img: IPHONE,
+        path: "/idCard",
+        img: ID_CARD,
         alt: "sidebar.dashboardAltText",
-        title: "Test4",
+        title: "ID CARD",
       },
     ],
   },
   {
-    img: IPHONE,
+    img: DOLLAR,
     alt: "sidebar.dashboardAltText",
-    title: "Notification",
+    title: "Payments",
     subItems: [
       {
-        path: "/test5",
-        img: IPHONE,
+        path: "/payments",
+        img: PAYMENT_METHOD,
         alt: "sidebar.dashboardAltText",
-        title: "Test5",
+        title: "Payment methods",
       },
       {
-        path: "/test6",
-        img: IPHONE,
+        path: "/currency",
+        img: CURRENCY,
         alt: "sidebar.dashboardAltText",
-        title: "Test6",
+        title: "Currency",
       },
     ],
   },
   {
-    img: IPHONE,
+    img: MESSAGES,
     alt: "sidebar.dashboardAltText",
-    title: "test6",
+    title: "Messages",
     subItems: [
       {
-        path: "/test7",
-        img: IPHONE,
+        path: "/mail",
+        img: MAIL,
         alt: "sidebar.dashboardAltText",
-        title: "Test7",
+        title: "MAIL",
       },
       {
-        path: "/test8",
-        img: IPHONE,
+        path: "/laptops",
+        img: LAPTOP,
         alt: "sidebar.dashboardAltText",
-        title: "Test8",
+        title: "Laptop models",
       },
     ],
   },
   {
-    img: IPHONE,
+    img: MEDIA,
     alt: "sidebar.dashboardAltText",
-    title: "posts",
+    title: "Media",
     subItems: [
       {
-        path: "/test9",
-        img: IPHONE,
+        path: "/video",
+        img: VIDEO,
         alt: "sidebar.dashboardAltText",
-        title: "Test9",
+        title: "Video",
       },
       {
-        path: "/test10",
-        img: IPHONE,
+        path: "/audio",
+        img: AUDIO,
         alt: "sidebar.dashboardAltText",
-        title: "Test10",
+        title: "Audio",
       },
     ],
   },
 ];
 
-export const NAVBAR_MODE = 1; //1,2
+export const NAVBAR_MODE = 2; //1,2

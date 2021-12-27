@@ -1,27 +1,36 @@
 @import "../styles/colors";
 
-.side-bar {  
+.side-bar {
   color: $white;
   width: 22%;
   a {
-    color: $white;
-  }  
+    color: white;    
+  }
+  .nav-link:focus,
+  .nav-link:hover
+   {
+    color: $visited;
+  }
   .sidebar-logo {
     background-color: $primary;
     height: 10%;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+
+    .logo {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 
-  .logo,
   .side-bar-icon {
     width: 3rem;
-    height: 3rem;
+    height: 2rem;
   }
 
   .side-bar-icon-shrinked {
     width: 3rem;
-    height: 3rem;
+    height: 2rem;
   }
 
   &.shrink-sidebar {
@@ -51,6 +60,6 @@
     &.shrink-sidebar {
       width: 10%;
       transition: all 0.5s ease-out;
-    }  
+    }
   }
 }

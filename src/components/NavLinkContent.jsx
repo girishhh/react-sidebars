@@ -7,7 +7,7 @@ import { NAVBAR_MODE } from "../NavBarConstants";
 
 function NavLinkContent({ item, shrink, expand }) {
   return (
-    <div className="d-flex">
+    <div className="d-flex ps-1">
       <Col
         md="4"
         lg="2"

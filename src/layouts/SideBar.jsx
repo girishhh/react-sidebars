@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import MenuItem from "../components/MenuItem";
 import { NAVBAR_MODE, SideNavBarItems } from "../NavBarConstants";
 import LOGO from "../styles/images/whatsapp.svg";
@@ -15,8 +16,10 @@ function SideBar({ shrink, toggleSidebar }) {
         unshrink: !shrink && NAVBAR_MODE === 1,
       })}
     >
-      <div className="sidebar-logo d-flex justify-content-center align-items-center">
-        <img src={LOGO} className="logo" alt="logo" />
+      <div className="d-flex justify-content-center align-items-center sidebar-logo">
+        <Link to="/">
+          <img src={LOGO} className="logo" alt="logo" />
+        </Link>
       </div>
 
       {NAVBAR_MODE === 1 && (
