@@ -52,7 +52,7 @@ function DefaultLayout(props) {
           )}
         </Media>
         <main
-          className={classNames({
+          className={classNames("d-flex",{
             "main-shrinked": shrink && NAVBAR_MODE === 1,
             "main-unshrinked": !shrink && NAVBAR_MODE === 1,
           })}

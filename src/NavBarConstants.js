@@ -1,18 +1,17 @@
-import ALERT from "../src/styles/images/alert.svg";
-import IPHONE from "../src/styles/images/iphone.png";
-import NOTIFICATION from "../src/styles/images/notification.svg";
-import ID_CARD from "../src/styles/images/id-card.svg";
-import DOLLAR from "../src/styles/images/dollar.svg";
-import PAYMENT_METHOD from "../src/styles/images/payment-method.svg";
-import CURRENCY from "../src/styles/images/currency.svg";
-import MESSAGES from "../src/styles/images/message.svg";
-import MAIL from "../src/styles/images/mail.svg";
-import LAPTOP from "../src/styles/images/laptop.svg";
-import VIDEO from "../src/styles/images/video.svg";
-import MEDIA from "../src/styles/images/media.svg";
+import ALERT  from "../src/styles/images/alert.svg";
 import AUDIO from "../src/styles/images/audio.svg";
+import CURRENCY from "../src/styles/images/currency.svg";
+import DOLLAR from "../src/styles/images/dollar.svg";
 import HOME from "../src/styles/images/home.svg";
+import ID_CARD from "../src/styles/images/id-card.svg";
+import LAPTOP from "../src/styles/images/laptop.svg";
+import MAIL from "../src/styles/images/mail.svg";
+import MEDIA from "../src/styles/images/media.svg";
+import MESSAGES from "../src/styles/images/message.svg";
+import NOTIFICATION from "../src/styles/images/notification.svg";
+import PAYMENT_METHOD from "../src/styles/images/payment-method.svg";
 import REMINDER from "../src/styles/images/reminder.svg";
+import VIDEO from "../src/styles/images/video.svg";
 
 export const SideNavBarItems = [
   {

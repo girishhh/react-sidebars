@@ -4,7 +4,7 @@
   color: $white;
   width: 22%;
   a {
-    color: white;    
+    color: $white;
   }
   .nav-link:focus,
   .nav-link:hover
@@ -14,8 +14,8 @@
   .sidebar-logo {
     background-color: $primary;
     height: 10%;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 1px solid $black;
+    border-right: 1px solid $black;
 
     .logo {
       width: 3rem;
@@ -45,13 +45,13 @@
   .side-menu-items {
     background-color: $primary;
     height: 100%;
-    border-right: 1px solid black;
+    border-right: 1px solid $black;
     display: block;
     padding-bottom: 6rem;
     overflow-y: auto;
   }
   .nav-item {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
   }
 }
 

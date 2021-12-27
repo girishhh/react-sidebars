@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.scss";
 import Dashboard from "./components/Dashboard";
 import NotFound from "./components/NotFound";
 import Notification from "./components/Notification";
