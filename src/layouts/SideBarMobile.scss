@@ -6,6 +6,11 @@
   a {
     color: $white;
   }
+  .nav-link:focus,
+  .nav-link:hover
+   {
+    color: $visited;
+  }
   .sidebar-logo {
     height: 3.8rem;
     background-color: $primary;
