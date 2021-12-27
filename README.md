@@ -16,7 +16,7 @@
     title: "title of the navigation item",
     subItems: "array of nested navigation items if we have nested nav items, these nav items has same structure and can be nested upto any level."
     }
-    
+
     3. Add your images to src/styles/images and import it into to NavBarConstants.js
 
-# ALL YOU NEED TO DO IS JUST CONFIGURE THE "NavBarConstants.js" file and project just works out of the box #
+# ALL YOU NEED TO DO IS JUST CONFIGURE THE "NavBarConstants.js" file, project just works out of the box #
